@@ -5,7 +5,7 @@ function bonk()
 end
 
 function waitForRS()
-	repeat uuntil os.pullEvent("redstone")
+	repeat until os.pullEvent("redstone")
 end
 
 function jam()
