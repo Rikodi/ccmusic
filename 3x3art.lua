@@ -1,5 +1,7 @@
+local args = {...}
+
 local mon = peripheral.find("monitor")
-local image = paintutils.loadImage("liaRave")
+local image = paintutils.loadImage(args[1])
 local oldTerm = term.redirect(mon)
 
 mon.setTextScale(0.5)
